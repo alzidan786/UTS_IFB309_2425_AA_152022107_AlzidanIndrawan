@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard</title>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sensor-data,
+        .actuator-status {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .data-point {
+            text-align: center;
+            margin: 10px;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IoT Dashboard</h1>
+        <div class="card">
+            <h2>Sensor Data</h2>
+            <div class="sensor-data">
+                <div class="data-point">
+                    <h3>Temperature</h3>
+                    <p id="temperature">-</p>
+                </div>
+                <div class="data-point">
+                    <h3>Humidity</h3>
+                    <p id="humidity">-</p>
+                </div>
+                <div class="data-point">
+                    <h3>pH</h3>
+                    <p id="ph">-</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Actuator Status</h2>
+            <div class="actuator-status">
+                <div class="data-point">
+                    <h3>Pump</h3>
+                    <p id="pumpStatus">-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
